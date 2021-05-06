@@ -7,12 +7,12 @@ public class UserManager  {
        System.out.println(student.getName() + "Adli ogrenci" + student.getStudentClass()+ "'ci sinifta okuyor" + student.getDepartment() + "'bolumunde okuyor \n");   
    }
      public void add(){
-         System.out.println("Yeni ders ekledi:\n");
+         System.out.println("Yeni eklemeler yaptı  :\n");
      }
      public void update(){
-         System.out.println("Dersleri guncelledi:\n");
+         System.out.println(" Eklemeleri Güncelledi:\n");
      }
     public void delete(){
-       System.out.println("Dersi Sildi:\n");
+       System.out.println("Bazı ekelemeleri kaldirdi :\n");
    }
 }
