@@ -9,7 +9,7 @@ package camphomework1;
  *
  * @author User
  */
-public class InstructorManager {
+public class InstructorManager extends UserManager {
 
    
    public void AddLesson(Student student,Instructor instructor){
