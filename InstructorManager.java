@@ -9,17 +9,30 @@ package camphomework1;
  *
  * @author User
  */
-public class InstructorManager extends UserManager {
+public class InstructorManager extends UserManager{
 
    
    public void AddLesson(Student student,Instructor instructor){
        System.out.println(instructor.getName() + " Ogretmen" + instructor.getLesson() + "'dersine  e " + student.getName()+" adli ogrenici ekledi.\n" );
    }
-   public void deleteLesson(){
-       System.out.println("Ders Silindi:\n");
-   }
-   public void add(Student student){
-      System.out.println(student.getName() + " Eklendi\n");
-   }
+
+    @Override
+    public void delete() {
+       
+        System.out.println( "Dersi kaldirdi: \n");
+    }
+
+    @Override
+    public void update() {
+        System.out.println("Dersi yeniledi: \n");
+    }
+
+    @Override
+    public void add() {
+        System.out.println("Ders Ekledi: \n");
+    }
+     
+   
+    
     
 }
