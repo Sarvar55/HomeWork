@@ -22,14 +22,16 @@ public class Main {
         
         StudentManager studentManager = new StudentManager();
         studentManager.DepartmanChange(student1);
+        studentManager.add();
+        studentManager.delete();
         
         Instructor instructor = new Instructor();
         instructor.setName("Mehmet");
         instructor.setLesson("Fizik");
         
         InstructorManager instructorManager = new InstructorManager();
-        instructorManager.deleteLesson();
         instructorManager.AddLesson(student1, instructor);
+        instructorManager.delete();
         
         UserManager userManager =new UserManager();
         userManager.StudentInfo(student1);
