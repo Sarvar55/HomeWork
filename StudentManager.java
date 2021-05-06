@@ -6,7 +6,7 @@
 package camphomework1;
 
 
-public class StudentManager{
+public class StudentManager extends UserManager  {
   public void DepartmanChange(Student student){
       System.out.println(student.getName()+ " adli ogrenci"  + " Bolumunu " + student.getDepartment()+ " olarak degistirdi");
   }
