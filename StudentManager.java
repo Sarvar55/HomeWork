@@ -1,18 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package camphomework1;
 
 
-public class StudentManager extends UserManager  {
+public class StudentManager extends UserManager{
   public void DepartmanChange(Student student){
-      System.out.println(student.getName()+ " adli ogrenci"  + " Bolumunu " + student.getDepartment()+ " olarak degistirdi");
+      System.out.println(student.getName()+ " adli ogrenci"  + " Bolumunu " + student.getDepartment()+ " olarak degistirdi \n");
   }
 public void studentEmailChange(Student student){
-    System.out.println("Adi" + student.getName() +" Soyadi " +student.getLastName() + "olan ogrenci" + student.getEmail() + " olarak degistirdi." );
+    System.out.println("Adi" + student.getName() +" Soyadi " +student.getLastName() + "olan ogrenci" + student.getEmail() + " olarak degistirdi. \n" );
 }
+
+    @Override
+    public void add() {
+        System.out.println("Derse  basladi :\n");
+    }
+
+    @Override
+    public void delete() {
+        super.delete();
+        System.out.println("Dersden Ayrildi: \n");
+    }
     
-            
+
+ 
 }
