@@ -18,7 +18,8 @@ public class InstructorManager {
    public void deleteLesson(){
        System.out.println("Ders Silindi:\n");
    }
-   
-    
+   public void add(Student student){
+      System.out.println(student.getName() + " Eklendi\n");
+   }
     
 }
